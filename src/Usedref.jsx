@@ -5,27 +5,47 @@ function Stopwatch() {
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
   const handleClick = () => {
-    alert("");
-   const refArray=[inputRef0,inputRef1,inputRef2];
-
-   for (let i of refArray) {
-    const xyz=i.current.value.trim();
-    if(xyz=== ""){
+    const refArray = [inputRef0, inputRef1, inputRef2];
+    for (let i of refArray) {
+      const xyz = i.current.value.trim();
+      if (xyz === "") {
         i.current.focus();
+        // alert("Please fill out the required fields");
         return;
+      }
     }
-   }
   };
   return (
     <>
       <div>
-        <input ref={inputRef0} placeholder="Enter your Email" /> <br></br>
-        <input ref={inputRef1} placeholder="Enter your mobile number" /> <br></br>
-        <input ref={inputRef2} placeholder="Enter your password" /> <br></br>
-
-        <button className="btn btn-primary text-white" onClick={handleClick}>
-          Click me to go there
-        </button>
+        <div className="container ">
+          <div className="card bg-secondary rounded-5">
+            <h2 className="text-center text-success bg-light mb-3 pb-1 ">
+              Sign Up
+            </h2>
+            <input
+              className="mb-1 form-control"
+              ref={inputRef0}
+              placeholder="Enter your Email"
+            />{" "}
+            <br></br>
+            <input
+              className="mb-1 form-control"
+              ref={inputRef1}
+              placeholder="Enter your mobile number"
+            />{" "}
+            <br></br>
+            <input
+              className="mb-1 form-control"
+              ref={inputRef2}
+              placeholder="Enter your password"
+            />{" "}
+            <br></br>
+            <button className="btn btn-danger text-white rounded-pill" onClick={handleClick}>
+              Click me to go there
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
