@@ -10,7 +10,7 @@ function Stopwatch() {
       const xyz = i.current.value.trim();
       if (xyz === "") {
         i.current.focus();
-        // alert("Please fill out the required fields");
+        
         return;
       }
     }
@@ -41,7 +41,7 @@ function Stopwatch() {
               placeholder="Enter your password"
             />{" "}
             <br></br>
-            <button className="btn btn-danger text-white rounded-pill" onClick={handleClick}>
+            <button className="btn btn-primary text-white rounded-pill" onClick={handleClick}>
               Click me to go there
             </button>
           </div>

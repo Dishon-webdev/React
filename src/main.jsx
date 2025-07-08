@@ -15,7 +15,7 @@ import Stopwatch from './Usedref.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <Dishon /> */}
     {/* <Properties name="Developers" content="How are you" /> */}
     {/* <Count/> */}
@@ -23,6 +23,6 @@ createRoot(document.getElementById('root')).render(
     <List/> */}
     {/* <Useeffect/> */}
     {/* <Fetch/> */}
-    <Stopwatch/>
+    {/* <Stopwatch/> */}
   </StrictMode>,
 )
