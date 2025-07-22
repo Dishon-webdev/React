@@ -12,6 +12,7 @@ import Useeffect from './Useeffect.jsx';
 import Fetch from './fetch.jsx';
 import Stopwatch from './Usedref.jsx';
 import Inputform from './Inputform.jsx';
+import Map from './map.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -25,6 +26,11 @@ createRoot(document.getElementById('root')).render(
     {/* <Useeffect/> */}
     {/* <Fetch/> */}
     {/* <Stopwatch/> */}
-    <Inputform/>
+     <Inputform/> 
+    {/* <Map/> */}
   </StrictMode>,
 )
+
+
+
+
