@@ -11,11 +11,12 @@ import List from './list.jsx';
 import Useeffect from './Useeffect.jsx';
 import Fetch from './fetch.jsx';
 import Stopwatch from './Usedref.jsx';
+import Inputform from './Inputform.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <Dishon /> */}
     {/* <Properties name="Developers" content="How are you" /> */}
     {/* <Count/> */}
@@ -24,5 +25,6 @@ createRoot(document.getElementById('root')).render(
     {/* <Useeffect/> */}
     {/* <Fetch/> */}
     {/* <Stopwatch/> */}
+    <Inputform/>
   </StrictMode>,
 )
