@@ -170,7 +170,7 @@ function InputForm() {
             <h1 className="bg-info text-white mt-3">Data base's details</h1>
             <ul>
               {user.map((xyz) => (
-                <li key={xyz.id}>{xyz.name}</li>
+                <li key={xyz.id}>{xyz.id}</li>
               ))}
             </ul>
           </div>
@@ -195,7 +195,7 @@ function InputForm() {
                   <td><button className="text-danger" onClick={() => handleDelete(bio.id)}>
                     DELETE
                     </button></td>
-
+                    <td><button className="text-success">Edit</button></td>
                   </tr>
                 ))}
               </tbody>
